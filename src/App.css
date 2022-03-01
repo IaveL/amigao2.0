@@ -1,38 +1,157 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto+Condensed&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hubballi', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  color: rgb(0, 0, 0);
   text-align: center;
+  background-color: #e9ec44a4;
+  display: flex;
+  position: sticky;
+  width: 100%;
+  /* border: solid red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TopNavbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: solid black; */
+  width: 35vw;
+  height: 7vh;
+  font-size: 1.3em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TopNavbar li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: bolder;
+  background-color: #e9ec44a4;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  margin: 1.2vw 45vw 0 5vw;
+  height: fit-content;
+  width: 250px;
+  background-color: #f8fc22d2;
+}
+
+.TripleButtons {
+  width: 100%;
+  display: flex;
+  height: 60px;
+  justify-content: space-around;
+}
+
+.TripleButtons button {
+  color: white;
+  background-color: #24880b96;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0);
+}
+
+.TripleButtons button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #1f700b;
+}
+
+.FirstAdoption h2 {
+  color: white;
+  font-size: 2em;
+
+}
+
+.FirstAdoption {
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn0.wideopenpets.com%2Fwp-content%2Fuploads%2F2018%2F03%2FAdobeStock_57899907.jpeg&f=1&nofb=1");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.About {
+  height: 65vh;
+  background-color: #e9ec44a4;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.About button {
+  margin: 25px;
+  height: 45px;
   color: white;
+  background-color: #24880b96;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0);
 }
 
-.App-link {
-  color: #61dafb;
+.About button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #1f700b; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Dogs{
+  border: solid black;
+  display: flex;
+  width: 25vw;
+  justify-content: space-evenly;
+}
+
+.Cats {
+  border: solid black;
+  display: flex;
+  width: 25vw;
+  justify-content: space-evenly;
+}
+
+footer {
+  background-color: #e9ec44a4;
+  display: flex;
+  align-items: center;
+}
+
+.Contact {
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+}
+
+.BottomNavbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 35vw;
+  height: 7vh;
+  margin-left: 50vw;
+  font-size: 1.3em;
+}
+
+.BottomNavbar li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  font-weight: bolder;
+  background-color: #e9ec44a4;
 }
